@@ -26,6 +26,7 @@ Partial Class Main
         Me.PictureBox = New System.Windows.Forms.PictureBox()
         Me.btnMove = New System.Windows.Forms.Button()
         Me.Timer00 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnAccelerate = New System.Windows.Forms.Button()
         CType(Me.PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,11 +51,21 @@ Partial Class Main
         'Timer00
         '
         '
+        'btnAccelerate
+        '
+        Me.btnAccelerate.Location = New System.Drawing.Point(778, 94)
+        Me.btnAccelerate.Name = "btnAccelerate"
+        Me.btnAccelerate.Size = New System.Drawing.Size(142, 42)
+        Me.btnAccelerate.TabIndex = 2
+        Me.btnAccelerate.Text = "Accelerate"
+        Me.btnAccelerate.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(953, 572)
+        Me.Controls.Add(Me.btnAccelerate)
         Me.Controls.Add(Me.btnMove)
         Me.Controls.Add(Me.PictureBox)
         Me.Name = "Main"
@@ -67,4 +78,5 @@ Partial Class Main
     Friend WithEvents PictureBox As PictureBox
     Friend WithEvents btnMove As Button
     Friend WithEvents Timer00 As Timer
+    Friend WithEvents btnAccelerate As Button
 End Class
